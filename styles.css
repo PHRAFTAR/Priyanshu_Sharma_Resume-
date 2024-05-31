@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Common styles for resume pages */
+.resume,
+.resume.skills-sheet,
+.resume.certificate-sheet {
+    width: 210mm; /* A4 width */
+    height: 297mm; /* A4 height */
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20mm;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    page-break-after: always;
+}
+
+.page-separator {
+    height: 5mm; /* Height of the separator */
+    background: transparent; /* Separator can be a different color if needed */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.header-content {
+    text-align: left;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+.header-content p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.content .section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    color: #007BFF;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.job, .education {
+    margin-bottom: 20px;
+}
+
+.job h3, .education h3 {
+    margin: 0;
+    color: #333;
+}
+
+.job p, .education p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.skills {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    background-color: #007BFF;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px 5px 0 0;
+    border-radius: 3px;
+}
+
+/* Text justification */
+p, li {
+    text-align: justify;
+}
+
+/* Ensure all text fits within the page */
+.resume .content,
+.resume.skills-sheet .content,
+.resume.certificate-sheet .content {
+    max-height: calc(297mm - 30mm); /* Adjusted height to fit the content within the A4 page */
+    overflow: hidden;
+}
+
+.certification {
+    margin-bottom: 10px;
+}
+/* CSS for link text color */
+.certification a {
+    color: #007BFF; /* Your desired color */
+    text-decoration: none; /* Remove underline from links if desired */
+}
+
+/* Hover effect for link text */
+.certification a:hover {
+    color: #0056b3; /* Color change on hover */
+}
+ /* Heading styles with shadow effect */
+h1, h2, h3 {
+    text-shadow: 2px 2px 4px rgba(87, 84, 84, 0.3); /* Horizontal offset, Vertical offset, Blur radius, Shadow color */
+    
+}
+/* Setting font to Calibri (Body) */
+body {
+    font-family: "Calibri", "Arial", sans-serif;
+}
+
+/* Heading styles with shadow effect */
+h1, h2, h3 {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    transform: translate3d(2px, 2px, 0); /* Add depth */
+    font-family: "Calibri", "Arial", sans-serif;
+}
+
+/* Content text */
+p, li {
+    font-family: "Calibri", "Arial", sans-serif;
+}
